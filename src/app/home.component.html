@@ -1,0 +1,17 @@
+<main class="home-page">
+  <section>
+    <h1>Welcome to Angular Practice</h1>
+    <p>This is the home page of your application.</p>
+  </section>
+
+  <section class="notice success">
+    <h2>Success</h2>
+    <p>User loaded successfully.</p>
+    <pre>{{ response | json }}</pre>
+  </section>
+
+  <section *ngIf="error" class="notice error">
+    <h2>Error</h2>
+    <p>{{ error }}</p>
+  </section>
+</main>
